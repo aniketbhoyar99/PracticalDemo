@@ -1,0 +1,121 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #533355;
+}
+
+.content {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 24px;
+    padding: 20px 16px;
+    border-radius: 8px;
+    border: 1px solid;
+    max-width: fit-content;
+    margin: auto;
+    background: white;
+}
+
+.heading {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+
+.decription {
+    color: white;
+    line-height: 20px;
+}
+
+.visit {
+    color: orange;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+/* body - 2 */
+
+.body-2 {
+    position: relative;
+}
+
+.body-2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 74px;
+    background-color: #D7DFE1;
+}
+
+
+.body-2-content {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 50%);
+}
+
+.body-2-heading {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.getting-started-btn {
+    padding: 12px 22px;
+    background: purple;
+    color: white;
+    border-radius: 22px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.col-5 {
+    max-width: 228px;
+    width: 100%;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #F3F3F3;
+}
+
+.facebook p {
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+.main-footer {
+    padding: 16px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

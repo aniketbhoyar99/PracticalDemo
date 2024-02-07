@@ -1,0 +1,25 @@
+.nav-bar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 12px;
+}
+
+.nav {
+    display: flex;
+    gap: 34px;
+    padding: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    list-style: none;
+}
+
+.sign-up-button {
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: purple;
+    color: white;
+}
