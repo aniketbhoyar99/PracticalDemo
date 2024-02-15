@@ -10,6 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import { useNavigate } from 'react-router-dom';
 import Paper from '@mui/material/Paper';
 import { Box, Button } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import { fetchUsers } from '../../redux/actions';
 import UserDialog from '../../common/Dialog';
@@ -48,7 +49,7 @@ export default function Users() {
     useEffect(() => {
         dispatch(fetchUsers())
     }, [])
-
+    
     return (
         <>
             <Box width="80%" margin="auto" paddingY={5}>
@@ -66,7 +67,7 @@ export default function Users() {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {data?.users?.map((row) => (
+                            {data.loading ? (data?.users?.map((row) => (
                                 <TableRow
                                     key={row.name}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -82,7 +83,9 @@ export default function Users() {
                                         </Box>
                                     </TableCell>
                                 </TableRow>
-                            ))}
+                            ))) : <div sx={{ display: 'flex', width: "100%", justifyContent: "center" }}>
+                                <CircularProgress />
+                            </div>}
                         </TableBody>
                     </Table>
                 </TableContainer>
